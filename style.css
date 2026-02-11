@@ -1,5 +1,3 @@
-/* Karabük Akıllı Ev - Optimized CSS 2025 */
-
 :root {
   --primary: #4A90E2;
   --primary-dark: #2E5C8A;
@@ -158,23 +156,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Sora', sans-serif;
   font-weight: 700;
   font-size: 1.1rem;
-  transition: var(--transition);
-}
-
-.logo:hover {
-  opacity: 0.8;
-}
-
-/* Logo Image Styling */
-.logo-image {
-  height: 45px;
-  width: auto;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
-
-.logo:hover .logo-image {
-  transform: scale(1.05);
 }
 
 .logo-icon {
@@ -1122,11 +1103,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1rem;
   }
   
-  /* Responsive logo sizing for mobile */
-  .logo-image {
-    height: 35px;
-  }
-  
   .logo-icon {
     font-size: 1.3rem;
   }
@@ -1350,11 +1326,6 @@ h1, h2, h3, h4, h5, h6 {
   
   .hero-subtitle {
     font-size: 0.95rem;
-  }
-  
-  /* Logo even smaller on very small screens */
-  .logo-image {
-    height: 30px;
   }
   
   .section-title {
