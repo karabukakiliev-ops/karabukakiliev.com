@@ -1096,40 +1096,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Instagram Float Button */
-.instagram-float {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  box-shadow: 0 4px 20px rgba(193, 53, 132, 0.4);
-  z-index: 998;
-  transition: var(--transition);
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-    box-shadow: 0 4px 20px rgba(193, 53, 132, 0.4);
-  }
-  50% {
-    transform: scale(1.05);
-    box-shadow: 0 6px 30px rgba(193, 53, 132, 0.6);
-  }
-}
-
-.instagram-float:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(193, 53, 132, 0.6);
-}
-
 /* Animations */
 /* Fade-in animation - JS olmadan da içerik görünsün */
 .fade-in {
@@ -1483,6 +1449,34 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 /* Fixed WhatsApp Button */
+.instagram-float {
+  position: fixed;
+  bottom: 95px;
+  right: 25px;
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(220, 39, 67, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 999;
+  text-decoration: none;
+}
+
+.instagram-float svg {
+  width: 28px;
+  height: 28px;
+}
+
+.instagram-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 30px rgba(220, 39, 67, 0.55);
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -1568,6 +1562,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
+  .instagram-float {
+    width: 55px;
+    height: 55px;
+    bottom: 90px;
+    right: 20px;
+  }
+
+  .instagram-float svg {
+    width: 25px;
+    height: 25px;
+  }
+
   .whatsapp-float {
     width: 55px;
     height: 55px;
@@ -1591,6 +1597,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 480px) {
+  .instagram-float {
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+    right: 15px;
+  }
+
   .whatsapp-float {
     width: 50px;
     height: 50px;
@@ -1647,21 +1660,28 @@ h1, h2, h3, h4, h5, h6 {
 /* Back to Top Button */
 .back-to-top {
   position: fixed;
-  bottom: 90px;
-  right: 20px;
+  bottom: 165px;
+  right: 25px;
   width: 50px;
   height: 50px;
   background: var(--primary);
   color: white;
   border: none;
   border-radius: 50%;
-  font-size: 1.5rem;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
   transition: var(--transition);
-  z-index: 997;
+  z-index: 999;
   box-shadow: var(--shadow-lg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-to-top svg {
+  width: 22px;
+  height: 22px;
 }
 
 .back-to-top.visible {
@@ -1676,10 +1696,23 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .back-to-top {
-    bottom: 80px;
-    right: 15px;
+    bottom: 150px;
+    right: 20px;
     width: 45px;
     height: 45px;
-    font-size: 1.3rem;
+  }
+
+  .back-to-top svg {
+    width: 20px;
+    height: 20px;
   }
 }
+
+@media (max-width: 480px) {
+  .back-to-top {
+    bottom: 140px;
+    right: 15px;
+    width: 42px;
+    height: 42px;
+  }
+} 
