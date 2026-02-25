@@ -299,7 +299,7 @@ function addOrganizationStructuredData() {
     },
     "sameAs": [
       "https://www.facebook.com/share/1DWChUPcsz/",
-      "https://www.instagram.com/karabukakiliev",
+      "https://www.instagram.com/karabukakilliev",
       "https://x.com/karabukakiliev"
     ],
     "areaServed": {
