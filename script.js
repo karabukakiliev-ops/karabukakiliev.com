@@ -8,20 +8,20 @@ const navMenu = document.getElementById('navMenu');
 
 if (mobileToggle && navMenu) {
   mobileToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    navMenu.classList.toggle('open');
     mobileToggle.classList.toggle('active');
   });
 
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
-      navMenu.classList.remove('active');
+      navMenu.classList.remove('open');
       mobileToggle.classList.remove('active');
     });
   });
 
   document.addEventListener('click', (e) => {
     if (!mobileToggle.contains(e.target) && !navMenu.contains(e.target)) {
-      navMenu.classList.remove('active');
+      navMenu.classList.remove('open');
       mobileToggle.classList.remove('active');
     }
   });
